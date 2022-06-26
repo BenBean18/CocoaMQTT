@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "12.0"
   s.tvos.deployment_target = "12.0"
   s.watchos.deployment_target = "2.0"
-  s.source   = { :git => "https://github.com/emqx/CocoaMQTT.git", :tag => "2.0.3-beta7"}
+  s.source   = { :git => "https://github.com/BenBean18/CocoaMQTT.git", :tag => "AppleNetwork"}
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |ss|

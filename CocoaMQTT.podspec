@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   
   s.subspec 'Core' do |ss|
-    ss.dependency "CocoaAsyncSocket", :git => "https://github.com/BenBean18/CocoaAsyncSocket.git"
+    # ss.dependency "CocoaAsyncSocket", :git => "https://github.com/BenBean18/CocoaAsyncSocket.git"
     ss.source_files = "Source/*.swift"
     ss.exclude_files = "Source/CocoaMQTTWebSocket.swift"
   end

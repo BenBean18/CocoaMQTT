@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name        = "CocoaMQTTWebSocker"
+  s.name        = "CocoaMQTTWebSocket"
   s.version     = "2.0.3-beta7"
   s.summary     = "MQTT v3.1.1 client library for iOS and OS X written with Swift 5"
   s.homepage    = "https://github.com/emqx/CocoaMQTT"

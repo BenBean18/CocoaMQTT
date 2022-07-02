@@ -236,7 +236,7 @@ public class CocoaMQTTWebSocket: CocoaMQTTSocketProtocol {
     internal var delegateQueue: DispatchQueue?
     internal var internalQueue = DispatchQueue(label: "CocoaMQTTWebSocket")
  
-    private var connection: CocoaMQTTWebSocketConnection?
+    public var connection: CocoaMQTTWebSocketConnection?
     
     private func reset() {
         connection?.delegate = nil
@@ -376,8 +376,8 @@ public extension CocoaMQTTWebSocket {
         public weak var delegate: CocoaMQTTWebSocketConnectionDelegate?
         public lazy var queue = DispatchQueue(label: "CocoaMQTTFoundationWebSocketConnection-\(self.hashValue)")
         
-        var session: URLSession?
-        var task: URLSessionWebSocketTask?
+        public var session: URLSession?
+        public var task: URLSessionWebSocketTask?
         
         public init(url: URL, config: URLSessionConfiguration) {
             super.init()
